@@ -25,7 +25,7 @@
 
 body {
     background-color: var(--concreto);
-    color: var(--fonte-texto);
+    font-family: var(--fonte-texto);
     font-size: 17px;
     line-height: 1.55;
 }
@@ -35,7 +35,7 @@ a {
 }
 
 h1, h2, h3 {
-    color: var(--fonte-cartaz);
+    font-family: var(--fonte-cartaz);
     font-weight: 900px;
     line-height: 0.95;
 }
@@ -54,7 +54,7 @@ h1, h2, h3 {
 }
 
 .logo {
-    color: var(--fonte-cartaz);
+    font-family: var(--fonte-cartaz);
     font-size: 34px;
     font-weight: 900px;
     text-decoration: none;
@@ -123,7 +123,7 @@ h1, h2, h3 {
     text-decoration: none;
     padding-inline: 16px 28px;
     border: none;
-    font: var(--fonte-texto);
+    font-family: var(--fonte-texto);
     font-size: 17px;
     cursor: pointer;
 }
@@ -192,4 +192,51 @@ h1, h2, h3 {
     border-top: 2px solid var(--concreto-escuro);
     font-weight: 600px;
     font-size: 15px;
+}
+
+.passos {
+    display: flex;
+    gap: 24px;
+}
+
+.passo {
+    border-top: 6px solid var(--tinta);
+    padding-top: 20px;
+    display: grid;
+}
+
+.passo-numero {
+    font-family: var(--fonte-cartaz);
+    font-size: 96px;
+    font-weight: 900px;
+    line-height: 1;
+    color: var(--caixa-dagua);
+}
+
+.passo h3 {
+    font-size: 32px;
+    margin-block: 8px 12px;
+}
+
+.rodape {
+    margin-top: 120px;
+    background-color: var(--tinta);
+    color: var(--concreto);
+    padding-block: 56px;
+}
+
+.rodape-colunas {
+    display: flex;
+    gap: 40px;
+}
+
+.rodape-coluna {
+    display: grid;
+}
+
+.rodape-h4 {
+    font-family: var(--fonte-cartaz);
+    font-size: 28px;
+    color: var(--fita);
+    margin-bottom: 12px;
 }
